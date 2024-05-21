@@ -1,0 +1,37 @@
+
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #191919;
+}
+
+.gallery {
+    width: 999px;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none; 
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+    flex: none;
+}
+
+.container img {
+    width: 15rem;
+    height: 25rem;
+    object-fit: cover;
+}
